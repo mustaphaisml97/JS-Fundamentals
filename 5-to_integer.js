@@ -1,14 +1,9 @@
-#!/usr/bin/node
-// 5-to_integer.js
+const arg = process.argv[2];
+const num = parseInt(arg);
 
-const num = process.argv[2];
-const parsedInt = parseInt(num);
-
-if (isNaN(parsedInt)) {
-  console.log('Not a number');
+if (!isNaN(num)) {
+  console.log(`My number: ${num}`);
 } else {
-  console.log(`My number: ${parsedInt}`);
-}
-if (isNaN(parsedInt) || num !== parsedInt.toString()) {
   console.log('Not a number');
 }
+
